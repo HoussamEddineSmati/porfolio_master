@@ -23,13 +23,13 @@
             <div class="nav_menu" id="nav-menu">
                 <ul class="nav_list grid">
                     <li class="nav_item">
-                        <a href="#home" class="nav_link">
-                            <i class="uil uil-estate nav_icon"></i>
+                        <a href="#home" class="nav_link active-link">
+                            <i class="uil uil-estate nav_icon"></i>Home
                         </a>
                     </li>
                     <li class="nav_item">
                         <a href="#about" class="nav_link">
-                            <i class="uil uil-user nav_icon"></i>
+                            <i class="uil uil-user nav_icon"></i>About
                         </a>
                     </li>
                     <li class="nav_item">
@@ -38,8 +38,8 @@
                         </a>
                     </li>
                     <li class="nav_item">
-                        <a href="#service" class="nav_link">
-                            <i class="uil uil-bag-alt" nav_icon></i> Service
+                        <a href="#services" class="nav_link">
+                            <i class="uil uil-bag-alt" nav_icon></i> services
                         </a>
                     </li>
                     <li class="nav_item">
@@ -53,7 +53,7 @@
                         </a>
                     </li>
                 </ul>
-                <i class="uil uil-multiply" id="nav-close"></i>
+                <i class="uil uil-multiply nav_close" id="nav-close"></i>
             </div>
             <div class="nav_btn">
                 <div class="nav_toggle" id="nav-toggle">
@@ -440,7 +440,7 @@
 
                     <span class="button button--flex button--small button--link service_button">
                         View More
-                        <i class="uil uil-arrow-right button_icon"></i>
+                        <i class="uil uil-arrow-right sevice-btn_icon"></i>
                     </span>
 
                     <div class="service_modal">
@@ -476,7 +476,7 @@
 
                     <span class="button button--flex button--small button--link service_button">
                         View More
-                        <i class="uil uil-arrow-right button_icon"></i>
+                        <i class="uil uil-arrow-right sevice-btn_icon"></i>
                     </span>
 
                     <div class="service_modal">
@@ -510,28 +510,199 @@
 
         <!--==================== PORTFOLIO ====================-->
         <section class="portfolio section" id="portfolio">
+            <h2 class="section_title">Portfolio</h2>
+            <span class="section_subtitle">My recent work</span>
+
+            <div class="portfolio_container container swiper-container">
+                <div class="swiper-wrapper">
+                    <!--==================== PORTFOLIO 1====================-->
+                    <div class="portfolio_content grid swiper-slide">
+                        <img src="assets/img/portfolio1.jpg" alt="" class="portfolio_img">
+
+                        <div class="portfolio_data">
+                            <h3 class="portfolio_title">Modern Website</h3>
+                            <p class="portfolio_description">
+                                Website adaptable to all devices, with ui components
+                                and animated interactions.
+                            </p>
+                            <a href="houssam-smati.render.com" class="button button--flex button--small portfolio_button">
+                                Demo
+                                <i class="uil uil-arrow-right portfolio_icon"></i>
+                            </a>
+                        </div>
+                    </div>
+
+                    <!--==================== PORTFOLIO 2====================-->
+                    <div class="portfolio_content grid swiper-slide">
+                        <img src="assets/img/portfolio2.jpg" alt="" class="portfolio_img">
+
+                        <div class="portfolio_data">
+                            <h3 class="portfolio_title">Modern crying</h3>
+                            <p class="portfolio_description">
+                                Website adaptable to all devices, with ui components
+                                and animated interactions.
+                            </p>
+                            <a href="houssam-smati.render.com" class="button button--flex button--small portfolio_button">
+                                Demo
+                                <i class="uil uil-arrow-right portfolio_icon"></i>
+                            </a>
+                        </div>
+                    </div>
+
+                    <!--==================== PORTFOLIO 3====================-->
+                    <div class="portfolio_content grid swiper-slide">
+                        <img src="assets/img/portfolio3.jpg" alt="" class="portfolio_img">
+
+                        <div class="portfolio_data">
+                            <h3 class="portfolio_title">back jack</h3>
+                            <p class="portfolio_description">
+                                Website adaptable to all devices, with ui components
+                                and animated interactions.
+                            </p>
+                            <a href="houssam-smati.render.com" class="button button--flex button--small portfolio_button">
+                                Demo
+                                <i class="uil uil-arrow-right portfolio_icon"></i>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="swiper-pagination"></div>
+
+                </div>
+            </div>
         </section>
 
         <!--==================== PROJECT IN MIND ====================-->
         <section class="project section">
+            <div class="project_bg">
+                <div class="project_container container grid">
+                    <div class="project_data">
+                        <h2 class="project_title">Do you have a project in mind?</h2>
+                        <p class="project_description">I am available for freelance work. If you have a project you want to get started, think you need my help with something or just fancy saying hello, then get in touch.</p>
+                        <a href="#contact" class="button button--flex button--white">
+                            Contact Me
+                            <i class="uil uil-message project_icon button_icon"></i>
+                        </a>
+                    </div>
+
+                    <img src="assets/img/project.png" alt="" class="project_img">
+                </div>
+            </div>
+
         </section>
 
-        <!--==================== TESTIMONIAL ====================-->
-        <section class="testimonial section">
-        </section>
 
         <!--==================== CONTACT ME ====================-->
         <section class="contact section" id="contact">
+            <h2 class="section_title">Contact Me</h2>
+            <span class="section_subtitle">Get in touch</span>
+
+            <div class="contact_container container grid">
+                <div>
+                    <div class="contact_information">
+                        <i class="uil uil-phone contact_icon"></i>
+
+                        <div>
+                            <h3 class="contact_title">Call Me</h3>
+                            <span class="contact_subtitle">+974 5522 6379</span>
+                        </div>
+                    </div>
+
+                    <div class="contact_information">
+                        <i class="uil uil-envelope contact_icon"></i>
+
+                        <div>
+                            <h3 class="contact_title">Email</h3>
+                            <span class="contact_subtitle">houssam.smati@univ-constantine2.dz</span>
+                        </div>
+                    </div>
+                </div>
+
+                <form action="" class="contact_form grid">
+                    <div class="conatct_inputs grid">
+                        <div class="contact_content">
+                            <label for="" class="contact_label">Name</label>
+                            <input type="text" class="contact_input">
+                        </div>
+                        <div class="contact_content">
+                            <label for="" class="contact_label">Email</label>
+                            <input type="email" class="contact_input">
+                        </div>
+                        <div class="contact_content">
+                            <label for="" class="contact_label">Project</label>
+                            <input type="text" class="contact_input">
+                        </div>
+                        <div class="contact_content">
+                            <label for="" class="contact_label">Message</label>
+                            <textarea name="" id="" cols="0" rows="10" class="contact_input"></textarea>
+                        </div>
+
+                        <div class="contact_button">
+                            <a href="" class="button button--flex">
+                                Send Message
+                                <i class="uil uil-message button_icon"></i>
+                            </a>
+                        </div>
+                </form>
+            </div>
         </section>
     </main>
 
     <!--==================== FOOTER ====================-->
     <footer class="footer">
+        <div class="footer_bg">
+            <div class="footer_container container grid">
+                <div>
+                    <h1 class="footer_title">Houssem Eddine</h1>
+                    <span class="footer_subtitle">Software Developer</span>
+                </div>
+
+                <ul class="footer_links">
+                    <li>
+                        <a href="#home" class="footer_link">Home</a>
+                    </li>
+                    <li>
+                        <a href="#about" class="footer_link">About</a>
+                    </li>
+                    <li>
+                        <a href="#skills" class="footer_link">Skills</a>
+                    </li>
+                    <li>
+                        <a href="#portfolio" class="footer_link">Portfolio</a>
+                    </li>
+                    <li>
+                        <a href="#contact" class="footer_link">Contact</a>
+                    </li>
+                </ul>
+
+                <div class="footer_socials">
+                    <a href="https://www.linkedin.com/in/houssam-smati/" target="_blank" class="footer_social">
+                        <i class="uil uil-linkedin-alt"></i>
+                    </a>
+                    <a href="https://github.com/HoussamEddineSmati" target="_blank" class="footer_social">
+                        <i class="uil uil-github-alt"></i>
+                    </a>
+                    <a href="https://www.facebook.com/houssam.smith.1" target="_blank" class="footer_social">
+                        <i class="uil uil-facebook"></i>
+                    </a>
+                    <a href="https://www.instagram.com/smart_antares/" target="_blank" class="footer_social">
+                        <i class="uil uil-instagram"></i>
+                    </a>
+                </div>
+            </div>
+
+            <p class="footer_copy">&#169; Houssem Smati. All right reserved</p>
+        </div>
+
     </footer>
 
     <!--==================== SCROLL TOP ====================-->
+    <a href="#" class="scrollup" id="scroll-up">
+        <i class="uil uil-arrow-up scrollup_icon"></i>
+    </a>
+
     <!--==================== SWIPER JS ====================-->
-    <script src=""></script>
+    <script src="assets/js/swiper-bundle.min.js"></script>
 
     <!--==================== MAIN JS ====================-->
     <script src="assets/js/main.js"></script>
