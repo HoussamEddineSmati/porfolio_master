@@ -1,5 +1,5 @@
 /*==================== GOOGLE FONTS ====================*/
-@import url('https://fonts.googleapis.com/css2?family=Tajawal:wght@400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Alkatra:wght@400;500;600&family=Playfair+Display:ital,wght@0,400;0,500;1,600&display=swap');
 
 /*==================== VARIABLES CSS ====================*/
 :root {
@@ -21,7 +21,7 @@
     --scroll-bar-color: hsl(var(--hue-color), 12%, 90%);
     --scroll-thumb-color: hsl(var(--hue-color), 12%, 80%);
     /*========== Font and typography ==========*/
-    --body-font: 'Tajawal', sans-serif;
+    --body-font: 'Alkatra', cursive; /* 'Playfair Display', serif; */
     /* .5rem = 8px, 1rem = 16px, 1.5rem = 24px ... */
     --big-font-size: 2rem;
     --h1-font-size: 1.5rem;
@@ -201,7 +201,7 @@ img {
 @media screen and (max-width: 767px) {
     .nav_menu {
         position: fixed;
-        bottom: -100;
+        bottom: -100%;
         left: 0;
         width: 100%;
         background-color: var(--body-color);
@@ -221,7 +221,7 @@ img {
     display: flex;
     flex-direction: column;
     align-items: center;
-    font-size: var(--font-medium);
+    font-size: var(--small-font-size);
     color: var(--title-color);
     font-weight: var(--font-medium);
 }
@@ -296,7 +296,7 @@ img {
 }
 
 .home_blob-img {
-    width: 200px;
+    width: 170px;
 }
 
 .home_data {
@@ -878,13 +878,12 @@ img {
 .scrollup {
     position: fixed;
     right: 1rem;
-    bottom: 5rem;
+    bottom: -20%;
     background-color: var(--first-color);
     opacity: .8;
     padding: 0 .5rem;
     border-radius: .5rem;
     z-index: var(--z-tooltip);
-    font-size: 1.25rem;
     transition: .5s;
 }
 
@@ -967,7 +966,7 @@ img {
 /* For medium devices */
 @media screen and (min-width: 568px) {
     .home_content {
-        grid-template-columns: maxmax-content 1fr 1fr;
+        grid-template-columns: max-content 1fr 1fr;
     }
 
     .home_data {
