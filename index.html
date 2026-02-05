@@ -1,744 +1,305 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" href="assets/img/coding.ico" type="image/x-icon">
-    <!--==================== UNICONS ====================-->
-    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
-
-    <!--==================== SWIPER CSS ====================-->
-    <link rel="stylesheet" href="assets/css/swiper-bundle.min.css">
-
-    <!--==================== CSS ====================-->
+    <title>Houssem Eddine Smati | Software Engineer</title>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400&family=Space+Mono:wght@400;700&display=swap"
+        rel="stylesheet">
+    <!-- Link to external CSS -->
     <link rel="stylesheet" href="assets/css/styles.css">
-
-    <title>Houssem Eddine Smati</title>
-
+    <link rel="icon" href="assets/img/coding.ico" type="image/x-icon">
 </head>
+
 <body>
-    <!--==================== HEADER ====================-->
-    <header class="header" id="header">
-        <nav class="nav container">
-            <a href="#" class="nav_logo">Houssem</a>
+    <!-- Loading Screen -->
+    <div class="loading" id="loading">
+        <div class="loading-text">LOADING...</div>
+    </div>
 
-            <div class="nav_menu" id="nav-menu">
-                <ul class="nav_list grid">
-                    <li class="nav_item">
-                        <a href="#home" class="nav_link active-link">
-                            <i class="uil uil-estate nav_icon"></i>Home
-                        </a>
-                    </li>
-                    <li class="nav_item">
-                        <a href="#about" class="nav_link">
-                            <i class="uil uil-user nav_icon"></i>About
-                        </a>
-                    </li>
-                    <li class="nav_item">
-                        <a href="#skills" class="nav_link">
-                            <i class="uil uil-file-info-alt nav_icon"></i> Skills
-                        </a>
-                    </li>
-                    <li class="nav_item">
-                        <a href="#services" class="nav_link">
-                            <i class="uil uil-bag-alt nav_icon"></i> services
-                        </a>
-                    </li>
-                    <li class="nav_item">
-                        <a href="#portfolio" class="nav_link">
-                            <i class="uil uil-mountains-sun nav_icon"></i> Portfolio
-                        </a>
-                    </li>
-                    <li class="nav_item">
-                        <a href="#contact" class="nav_link">
-                            <i class="uil uil-comment-message nav_icon"></i> Contact Me
-                        </a>
-                    </li>
-                </ul>
+    <!-- Film Effects -->
+    <div class="film-grain"></div>
+    <div class="vignette"></div>
+    <div class="cinematic-bar top"></div>
+    <div class="cinematic-bar bottom"></div>
 
-                <i class="uil uil-multiply nav_close" id="nav-close"></i>
+    <!-- Navigation -->
+    <nav>
+        <a href="#" class="logo">HOUSSEM</a>
+        <div class="nav-right">
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#journey">Journey</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <!-- Theme Toggle Button -->
+            <button class="theme-toggle" id="theme-toggle" aria-label="Toggle Theme">☀️</button>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="hero-bg"></div>
+        <div class="spotlight" style="top: 30%; left: 60%;"></div>
+        <div class="spotlight" style="top: 70%; left: 30%; animation-delay: -5s;"></div>
+
+        <div class="hero-content">
+            <span class="hero-subtitle">SOFTWARE ENGINEER</span>
+            <h1 class="hero-title">HOUSSEM<br>EDDINE<br>SMATI</h1>
+            <p class="hero-tagline">"Passionate about transforming complex problems into elegant solutions through the
+                art of code."</p>
+            <div class="cta-group">
+                <a href="#contact" class="cta-btn">Begin the Journey</a>
+                <!-- CV Download Button -->
+                <a href="assets/pdf/Houssem-Resume.pdf" class="cta-btn" target="_blank">Download CV</a>
             </div>
-            <div class="nav_btn">
-
-                <!--==================== DARK LIGHT THEME ====================-->
-                <i class="uil uil-moon change-theme" id="theme-button"></i>
-
-                <div class="nav_toggle" id="nav-toggle">
-                    <i class="uil uil-apps"></i>
-                </div>
-            </div>
-        </nav>
-    </header>
-
-    <!--==================== MAIN ====================-->
-    <main class="main">
-        <!--==================== HOME ====================-->
-        <section class="home section" id="home">
-            <div class="home_container container grid">
-                <div class="home_content grid">
-                    <div class="home_social">
-                        <a href="https://www.linkedin.com/in/houssam-smati/" target="_blank" class="home_social-icon">
-                            <i class="uil uil-linkedin-alt"></i>
-
-                        </a>
-                        <!--<a href="#" target="_blank" class="home_social-icon">
-                            <i class="uil uil-dribbble"></i>
-                        </a>-->
-                        <a href="https://github.com/HoussamEddineSmati" target="_blank" class="home_social-icon">
-                            <i class="uil uil-github-alt"></i>
-                        </a>
-                    </div>
-
-                    <div class="home_img">
-                        <svg class="home_blob" viewBox="0 0 200 187" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-                            <mask id="mask0" mask-type="alpha">
-                                <path d="M190.312 36.4879C206.582 62.1187 201.309 102.826 182.328 134.186C163.346 165.547
-                                    130.807 187.559 100.226 186.353C69.6454 185.297 41.0228 161.023 21.7403 129.362C2.45775
-                                    97.8511 -7.48481 59.1033 6.67581 34.5279C20.9871 10.1032 59.7028 -0.149132 97.9666
-                                    0.00163737C136.23 0.303176 174.193 10.857 190.312 36.4879Z" />
-                            </mask>
-                            <g mask="url(#mask0)">
-                                <path d="M190.312 36.4879C206.582 62.1187 201.309 102.826 182.328 134.186C163.346
-                                    165.547 130.807 187.559 100.226 186.353C69.6454 185.297 41.0228 161.023 21.7403
-                                    129.362C2.45775 97.8511 -7.48481 59.1033 6.67581 34.5279C20.9871 10.1032 59.7028
-                                    -0.149132 97.9666 0.00163737C136.23 0.303176 174.193 10.857 190.312 36.4879Z" />
-
-                                <image class="home_blob-img" x='12' y='18' href="assets\img\perfil.png" />
-                            </g>
-                        </svg>
-                    </div>
-
-                    <div class="home_data">
-                        <h1 class="home_title">Hello, I am Houssem</h1>
-                        <h3 class="home_subtitle"><span class="typer"></span></h3>
-                        <p class="home_description">VERY THRILLED AND PASSIONATE ABOUT PROGRAMMING. I AM A QUICK LEARNER AND A PROBLEM SOLVER WITH CREATIVE IDEAS.</p>
-                        <a href="#contact" class="button button--flex">
-                            Contact Me <i class="uil uil-message button_icon"></i>
-                        </a>
-                    </div>
-                </div>
-
-                <div class="home_scroll">
-                    <a href="#about" class="home_scroll-button button--flex">
-                        <i class="uil uil-mouse-alt home_scroll-mouse"></i>
-                        <span class="home_scroll-name">Scroll Down</span>
-                        <i class="uil uil-arrow-down home_scroll-arrow"></i>
-                    </a>
-                </div>
-            </div>
-        </section>
-
-        <!--==================== ABOUT ====================-->
-        <section class="about section" id="about">
-            <h2 class="section_title">About Me</h2>
-            <span class="section_subtitle">Intro</span>
-            <div class="about_container container grid">
-                <img src="assets/img/about.jpg" alt="" class="about_img">
-
-                <div class="about_data">
-                    <p class="about_descreption">Software Engineer with extensive knowledge.Ambition and passion for solving complex problems and creating innovative solutions through code.</p>
-
-                    <div class="about_info">
-                        <div>
-                            <span class="about_info-title">02+</span>
-                            <span class="about_info-name">Years <br> experience</span>
-                        </div>
-
-                        <div>
-                            <span class="about_info-title">03</span>
-                            <span class="about_info-project">Completed <br> project</span>
-                        </div>
-                    </div>
-
-
-                    <div class="about_buttons">
-                        <a download="" href="assets/pdf/Houssem-Resume.pdf" class="button button--flex">
-                            Download CV <i class="uil uil-download-alt button_icon"></i>
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!--==================== SKILLS ====================-->
-        <section class="skills section" id="skills">
-            <h2 class="section_title">Skills</h2>
-            <span class="section_subtitle">My Technical Level</span>
-
-            <div class="skill_container container grid">
-                <!--==================== SKILLS Front====================-->
-                <div class="skill_content skill_open">
-                    <div class="skill_header">
-                        <i class="uil uil-brackets-curly skill_icon"></i>
-
-                        <div>
-                            <h1 class="skills_title">Frontend</h1>
-                            <span class="skills_subtitle">From 2022</span>
-                        </div>
-
-                        <i class="uil uil-angle-double-down skill_arrow"></i>
-                    </div>
-
-                    <div class="skill_list grid">
-                        <div class="skill_data">
-                            <div class="skill_titles">
-                                <h3 class="skill_name">ANGULAR</h3>
-                                <span class="skill_number"></span>
-                            </div>
-                            <div class="skill_bar">
-                                <span class="skill_percentage skill_html"></span>
-                            </div>
-                        </div>
-
-                        <div class="skill_data">
-                            <div class="skill_titles">
-                                <h3 class="skill_name">TYPESCRIPT</h3>
-                                <span class="skill_number"></span>
-                            </div>
-                            <div class="skill_bar">
-                                <span class="skill_percentage skill_css"></span>
-                            </div>
-                        </div>
-
-                        <div class="skill_data">
-                            <div class="skill_titles">
-                                <h3 class="skill_name">REACT</h3>
-                                <span class="skill_number"></span>
-                            </div>
-                            <div class="skill_bar">
-                                <span class="skill_percentage skill_js"></span>
-                            </div>
-                        </div>
-
-
-                    </div>
-                </div>
-
-                <!--==================== SKILLS Back====================-->
-                <div class="skill_content skill_close">
-                    <div class="skill_header">
-
-                        <i class="uil uil-server skill_icon"></i>
-
-                        <div>
-                            <h1 class="skills_title">backend</h1>
-                            <span class="skills_subtitle">more than 2 Year</span>
-                        </div>
-
-                        <i class="uil uil-angle-double-down skill_arrow"></i>
-                    </div>
-
-                    <div class="skill_list grid">
-                        <div class="skill_data">
-                            <div class="skill_titles">
-                                <h3 class="skill_name">Asp.net</h3>
-                                <span class="skill_number"></span>
-                            </div>
-                            <div class="skill_bar">
-                                <span class="skill_percentage skill_Java"></span>
-                            </div>
-                        </div>
-
-                        <div class="skill_data">
-                            <div class="skill_titles">
-                                <h3 class="skill_name">C#</h3>
-                                <span class="skill_number"></span>
-                            </div>
-                            <div class="skill_bar">
-                                <span class="skill_percentage skill_csharp"></span>
-                            </div>
-                        </div>
-
-                        <div class="skill_data">
-                            <div class="skill_titles">
-                                <h3 class="skill_name">Java</h3>
-                                <span class="skill_number"></span>
-                            </div>
-                            <div class="skill_bar">
-                                <span class="skill_percentage skill_sql"></span>
-                            </div>
-                        </div>
-
-
-                    </div>
-                </div>
-
-                <!--==================== SKILLS Tools====================-->
-                <div class="skill_content skill_close">
-                    <div class="skill_header">
-                        <i class="uil uil-wrench skill_icon"></i>
-
-                        <div>
-                            <h1 class="skills_title">Tools</h1>
-                            <span class="skills_subtitle"></span>
-                        </div>
-
-                        <i class="uil uil-angle-double-down skill_arrow"></i>
-                    </div>
-
-                    <div class="skill_list grid">
-                        <div class="skill_data">
-                            <div class="skill_titles">
-                                <h3 class="skill_name">Jira</h3>
-                                <span class="skill_number"></span>
-                            </div>
-                            <div class="skill_bar">
-                                <span class="skill_percentage skill_trello"></span>
-                            </div>
-                        </div>
-
-                        <div class="skill_data">
-                            <div class="skill_titles">
-                                <h3 class="skill_name">MS Sql Server</h3>
-                                <span class="skill_number"></span>
-                            </div>
-                            <div class="skill_bar">
-                                <span class="skill_percentage skill_Photoshop"></span>
-                            </div>
-                        </div>
-
-                        <div class="skill_data">
-                            <div class="skill_titles">
-                                <h3 class="skill_name">Git</h3>
-                                <span class="skill_number"></span>
-                            </div>
-                            <div class="skill_bar">
-                                <span class="skill_percentage skill_git"></span>
-                            </div>
-                        </div>
-
-
-                    </div>
-                </div>
-
-            </div>
-
-
-        </section>
-
-        <!--==================== QUALIFICATION ====================-->
-        <section class="qualification section">
-            <h2 class="section_title">Qualification</h2>
-            <span class="section_subtitle">My personal journey</span>
-
-            <div class="qualification_container container">
-                <div class="qualification_tab">
-                    <div class="qualification_button button--flex qualification_active" data-target="#education">
-                        <i class="uil uil-graduation-cap qualification_icon"></i>
-                        Education
-                    </div>
-
-                    <div class="qualification_button button--flex qualification_active" data-target="#work">
-                        <i class="uil uil-briefcase-alt qualification_icon"></i>
-                        Work
-                    </div>
-                </div>
-
-                <div class="qualification_sections">
-                    <!--==================== QUALIFICATION CONTENT 1====================-->
-                    <div class="qualification_content qualification_active" data-content id="education">
-                        <!--==================== QUALIFICATION 1====================-->
-                        <div class="qualification_data">
-                            <div>
-                                <h3 class="qualification_title">Master's degree in Software Engineer</h3>
-                                <span class="qualification_subtitle">University of Constantine 2</span>
-                                <div class="qualification_calendar">
-                                    <i class="uil uil-calendar-alt"></i>
-                                    2020 - 2022
-                                </div>
-                            </div>
-
-                            <div>
-                                <span class="qualification_rounder"></span>
-                                <span class="qualification_line"></span>
-                            </div>
-                        </div>
-
-                        <!--==================== QUALIFICATION 2====================-->
-                        <div class="qualification_data">
-                            <div></div>
-
-                            <div>
-                                <span class="qualification_rounder"></span>
-                                <span class="qualification_line"></span>
-                            </div>
-
-                            <div>
-                                <h3 class="qualification_title">Bachelor of Computer Science</h3>
-                                <span class="qualification_subtitle">University of Constantine 2</span>
-                                <div class="qualification_calendar">
-                                    <i class="uil uil-calendar-alt"></i>
-                                    2017 - 2020
-                                </div>
-                            </div>
-                        </div>
-
-                        <!--==================== QUALIFICATION 3====================-->
-                        <div class="qualification_data">
-                            <div>
-                                <h3 class="qualification_title">High School Diploma</h3>
-                                <span class="qualification_subtitle">High School of Farhat Abbas</span>
-                                <div class="qualification_calendar">
-                                    <i class="uil uil-calendar-alt"></i>
-                                    2016 - 2017
-                                </div>
-                            </div>
-
-                            <div>
-                                <span class="qualification_rounder"></span>
-                            </div>
-                        </div>
-                    </div>
-                    <!--==================== QUALIFICATION CONTENT 2====================-->
-                    <div class="qualification_content qualification_active" data-content id="work">
-                        <!--==================== QUALIFICATION 1====================-->
-                        <div class="qualification_data">
-                            <div></div>
-
-                            <div>
-                                <span class="qualification_rounder"></span>
-                                <span class="qualification_line"></span>
-                            </div>
-
-                            <div>
-                                <h3 class="qualification_title">FullStack Developer</h3>
-                                <span class="qualification_subtitle">Innova Wide</span>
-                                <div class="qualification_calendar">
-                                    <i class="uil uil-calendar-alt"></i>
-                                    2023 - Present
-                                </div>
-                            </div>
-                        </div>
-
-                        <!--==================== QUALIFICATION 2====================-->
-
-                        <div class="qualification_data">
-                            <div>
-                                <h3 class="qualification_title">IT support / Software Engineer</h3>
-                                <span class="qualification_subtitle">Manaf CyberCafe</span>
-                                <div class="qualification_calendar">
-                                    <i class="uil uil-calendar-alt"></i>
-                                    2021 - 2022
-                                </div>
-                            </div>
-
-                            <div>
-                                <span class="qualification_rounder"></span>
-                                <span class="qualification_line"></span>
-                            </div>
-                        </div>
-
-                        <!--==================== QUALIFICATION 3====================-->
-                        <div class="qualification_data">
-                            <div></div>
-
-                            <div>
-                                <span class="qualification_rounder"></span>
-
-                            </div>
-
-                            <div>
-                                <h3 class="qualification_title">Software Engineer, Intern</h3>
-                                <span class="qualification_subtitle">Condor electronics</span>
-                                <div class="qualification_calendar">
-                                    <i class="uil uil-calendar-alt"></i>
-                                    2019 - 2020
-                                </div>
-                            </div>
-
-                        </div>
-
-                    </div>
-                </div>
-
-            </div>
-
-        </section>
-
-        <!--==================== SERVICES ====================-->
-        <section class="services section" id="services">
-            <h2 class="section_title">Services</h2>
-            <span class="section_subtitle">What I offer</span>
-
-            <div class="service_container container grid">
-
-                <!--==================== SERVICE 1====================-->
-                <div class="service_content">
-                    <i class="uil uil-web-grid service_icon"></i>
-                    <h3 class="service_title">Frontend <br> Developement</h3>
-
-                    <span class="button button--flex button--small button--link service_button">
-                        View More
-                        <i class="uil uil-arrow-right sevice-btn_icon"></i>
-                    </span>
-
-                    <div class="service_modal">
-                        <div class="service_modal-content">
-                            <h4 class="service_modal-title">Frontend <br> Developement</h4>
-                            <i class="uil uil-multiply service_modal-close"></i>
-
-                            <ul class="service_modal-services grid">
-                                <li class="service_modal-service">
-                                    <i class="uil uil-check-circle service_modal-icon"></i>
-                                    <p>I develop the user interface.</p>
-                                </li>
-                                <li class="service_modal-service">
-                                    <i class="uil uil-check-circle service_modal-icon"></i>
-                                    <p>Web page development.</p>
-                                </li>
-                                <li class="service_modal-service">
-                                    <i class="uil uil-check-circle service_modal-icon"></i>
-                                    <p>I create APIs and microservices.</p>
-                                </li>
-                                <li class="service_modal-service">
-                                    <i class="uil uil-check-circle service_modal-icon"></i>
-                                    <p>I manage databases.</p>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-                <!--==================== SERVICE 2====================-->
-                <div class="service_content">
-                    <i class="uil uil-arrow service_icon"></i>
-                    <h3 class="service_title">Backend <br> Developement</h3>
-
-                    <span class="button button--flex button--small button--link service_button">
-                        View More
-                        <i class="uil uil-arrow-right sevice-btn_icon"></i>
-                    </span>
-
-                    <div class="service_modal">
-                        <div class="service_modal-content">
-                            <h4 class="service_modal-title">Backend <br> Developement</h4>
-                            <i class="uil uil-multiply service_modal-close"></i>
-
-                            <ul class="service_modal-services grid">
-                                <li class="service_modal-service">
-                                    <i class="uil uil-check-circle service_modal-icon"></i>
-                                    <p>I crate the architect of project.</p>
-                                </li>
-                                <li class="service_modal-service">
-                                    <i class="uil uil-check-circle service_modal-icon"></i>
-                                    <p>Web page development.</p>
-                                </li>
-                                <li class="service_modal-service">
-                                    <i class="uil uil-check-circle service_modal-icon"></i>
-                                    <p>I create APIs and microservices.</p>
-                                </li>
-                                <li class="service_modal-service">
-                                    <i class="uil uil-check-circle service_modal-icon"></i>
-                                    <p>I manage databases.</p>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!--==================== PORTFOLIO ====================-->
-        <section class="portfolio section" id="portfolio">
-            <h2 class="section_title">Portfolio</h2>
-            <span class="section_subtitle">My recent work</span>
-
-            <div class="portfolio_container container swiper-container">
-                <div class="swiper-wrapper">
-                    <!--==================== PORTFOLIO 1====================-->
-                    <div class="portfolio_content grid swiper-slide">
-                        <img src="assets/img/portfolio1.jpg" alt="" class="portfolio_img">
-
-                        <div class="portfolio_data">
-                            <h3 class="portfolio_title">Tanky Shop</h3>
-                            <p class="portfolio_description">
-                                High tech E-commerce Website adaptable to all devices,
-                                Languages: Asp.net,SQL, HTML,CSS, JavaScript.
-                            </p>
-                            <a href="https://github.com/HoussamEddineSmati/TankyHighTech" class="button button--flex button--small portfolio_button">
-                                Code
-                                <i class="uil uil-arrow-right portfolio_icon"></i>
-                            </a>
-                        </div>
-                    </div>
-
-                    <!--==================== PORTFOLIO 2====================-->
-                    <div class="portfolio_content grid swiper-slide">
-                        <img src="assets/img/portfolio2.jpg" alt="" class="portfolio_img">
-
-                        <div class="portfolio_data">
-                            <h3 class="portfolio_title">Simulation of autonomus cars with BDI</h3>
-                            <p class="portfolio_description">
-                                Simulation of autonomus cars with BDI agent's concet,
-                                Languages: Java, JavaFx.
-                            </p>
-                            <a href="https://github.com/HoussamEddineSmati/SelfDrivingCarSimulator-main" class="button button--flex button--small portfolio_button">
-                                Code
-                                <i class="uil uil-arrow-right portfolio_icon"></i>
-                            </a>
-                        </div>
-                    </div>
-
-                    <!--==================== PORTFOLIO 3====================-->
-                    <div class="portfolio_content grid swiper-slide">
-                        <img src="assets/img/Movie.jpg" alt="" class="portfolio_img">
-
-                        <div class="portfolio_data">
-                            <h3 class="portfolio_title">Movie Fantasy</h3>
-                            <p class="portfolio_description">
-                                Website demonstrate my potential in programing and show my journey,
-                                Languages: HTML,CSS, JavaScript, React.
-                            </p>
-                            <a href="https://moviefantasy.onrender.com" class="button button--flex button--small portfolio_button">
-                                Code
-                                <i class="uil uil-arrow-right portfolio_icon"></i>
-                            </a>
-                        </div>
-                    </div>
-
-
-
-                    <div class="swiper-pagination"></div>
-
-                </div>
-            </div>
-        </section>
-
-        <!--==================== PROJECT IN MIND ====================-->
-        <section class="project section">
-            <div class="project_bg">
-                <div class="project_container container grid">
-                    <div class="project_data">
-                        <h2 class="project_title">Do you have a project in mind?</h2>
-                        <p class="project_description">I am available for freelance work. If you have a project you want to get started, think you need my help with something or just fancy saying hello, then get in touch.</p>
-                        <a href="#contact" class="button button--flex button--white">
-                            Contact Me
-                            <i class="uil uil-message project_icon button_icon"></i>
-                        </a>
-                    </div>
-
-                    <img src="assets/img/project.png" alt="" class="project_img">
-                </div>
-            </div>
-
-        </section>
-
-        <!--==================== CONTACT ME ====================-->
-        <section class="contact section" id="contact">
-            <h2 class="section_title">Contact Me</h2>
-            <span class="section_subtitle">Get in touch</span>
-
-            <div class="contact_container container grid">
-                <div>
-                    <div class="contact_information">
-                        <i class="uil uil-phone contact_icon"></i>
-
-                        <div>
-                            <h3 class="contact_title">Call Me</h3>
-                            <span class="contact_subtitle">+974 5522 6379</span>
-                        </div>
-                    </div>
-
-                    <div class="contact_information">
-                        <i class="uil uil-envelope contact_icon"></i>
-
-                        <div>
-                            <h3 class="contact_title">Email</h3>
-                            <span class="contact_subtitle">houssam.smati@univ-constantine2.dz</span>
-                        </div>
-                    </div>
-                </div>
-
-                <form action="https://formsubmit.co/el/gicano" class="contact_form grid" target="_blank">
-                    <div class="conatct_inputs grid">
-                        <div class="contact_content">
-                            <label for="" class="contact_label">Name</label>
-                            <input type="text" class="contact_input" name="name">
-                        </div>
-                        <div class="contact_content">
-                            <label for="" class="contact_label">Email</label>
-                            <input type="email" class="contact_input" name="email">
-                        </div>
-                        <div class="contact_content">
-                            <label for="" class="contact_label">Project</label>
-                            <input type="text" class="contact_input" name="_subject">
-                        </div>
-                        <div class="contact_content">
-                            <label for="" class="contact_label">Message</label>
-                            <textarea   cols="0" rows="10" class="contact_input" name="email-msg"></textarea>
-                        </div>
-
-                        <div class="contact_button">
-
-                            <button class="button button--flex" type="submit">
-                                Send Message
-                                <i class="uil uil-message button_icon"></i>
-                            </button>
-                        </div>
-                    </div>
-                </form>
-            </div>
-        </section>
-    </main>
-
-    <!--==================== FOOTER ====================-->
-    <footer class="footer">
-        <div class="footer_bg">
-            <div class="footer_container container grid">
-                <div>
-                    <h1 class="footer_title">Houssem Eddine</h1>
-                    <span class="footer_subtitle">Software Developer</span>
-                </div>
-
-                <ul class="footer_links">
-                    <li>
-                        <a href="#home" class="footer_link">Home</a>
-                    </li>
-                    <li>
-                        <a href="#about" class="footer_link">About</a>
-                    </li>
-                    <li>
-                        <a href="#skills" class="footer_link">Skills</a>
-                    </li>
-                    <li>
-                        <a href="#portfolio" class="footer_link">Portfolio</a>
-                    </li>
-                    <li>
-                        <a href="#contact" class="footer_link">Contact</a>
-                    </li>
-                </ul>
-
-                <div class="footer_socials">
-                    <a href="https://www.linkedin.com/in/houssam-smati/" target="_blank" class="footer_social">
-                        <i class="uil uil-linkedin-alt"></i>
-                    </a>
-                    <a href="https://github.com/HoussamEddineSmati" target="_blank" class="footer_social">
-                        <i class="uil uil-github-alt"></i>
-                    </a>
-                    <a href="https://www.facebook.com/houssam.smith.1" target="_blank" class="footer_social">
-                        <i class="uil uil-facebook"></i>
-                    </a>
-                    <a href="https://www.instagram.com/smart_antares/" target="_blank" class="footer_social">
-                        <i class="uil uil-instagram"></i>
-                    </a>
-                </div>
-            </div>
-
-            <p class="footer_copy">&#169; Houssem Smati. All right reserved</p>
         </div>
 
+        <div class="scroll-indicator">
+            <span>SCROLL</span>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about" id="about">
+        <div class="section-header">
+            <span class="section-number">ACT I</span>
+            <h2 class="section-title">THE PROTAGONIST</h2>
+            <div class="section-line"></div>
+        </div>
+
+        <div class="about-grid">
+            <div class="about-image">
+                <!-- Updated About Image -->
+                <img src="assets/img/about.png" alt="Houssem Eddine Smati">
+            </div>
+            <div class="about-text">
+                <h3>THE ORIGIN STORY</h3>
+                <p>A Software Engineer driven by an insatiable curiosity and an unwavering ambition to craft digital
+                    experiences that matter. With extensive knowledge spanning the full stack, every line of code tells
+                    a story of innovation and dedication.</p>
+                <p>Quick to learn, relentless in problem-solving, and fueled by creative ideas that push boundaries. The
+                    journey from Constantine to the global tech stage continues to unfold, one project at a time.</p>
+
+                <div class="stats">
+                    <div class="stat">
+                        <div class="stat-number">02+</div>
+                        <div class="stat-label">Years Experience</div>
+                    </div>
+                    <div class="stat">
+                        <div class="stat-number">03</div>
+                        <div class="stat-label">Projects Completed</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section class="skills" id="skills">
+        <div class="section-header">
+            <span class="section-number">ACT II</span>
+            <h2 class="section-title">THE ARSENAL</h2>
+            <div class="section-line"></div>
+        </div>
+
+        <div class="skills-container">
+            <div class="skill-category">
+                <h3>FRONTEND MASTERY</h3>
+                <div class="skill-tags">
+                    <span class="skill-tag">Angular</span>
+                    <span class="skill-tag">React</span>
+                    <span class="skill-tag">TypeScript</span>
+                    <span class="skill-tag">HTML5</span>
+                    <span class="skill-tag">CSS3</span>
+                    <span class="skill-tag">JavaScript</span>
+                </div>
+            </div>
+
+            <div class="skill-category">
+                <h3>BACKEND EXPERTISE</h3>
+                <div class="skill-tags">
+                    <span class="skill-tag">ASP.NET</span>
+                    <span class="skill-tag">C#</span>
+                    <span class="skill-tag">Java</span>
+                    <span class="skill-tag">REST APIs</span>
+                    <span class="skill-tag">Microservices</span>
+                </div>
+            </div>
+
+            <div class="skill-category">
+                <h3>TOOLS & TECHNOLOGIES</h3>
+                <div class="skill-tags">
+                    <span class="skill-tag">Git</span>
+                    <span class="skill-tag">MS SQL Server</span>
+                    <span class="skill-tag">Jira</span>
+                    <span class="skill-tag">Azure</span>
+                    <span class="skill-tag">Docker</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Timeline Section -->
+    <section class="timeline" id="journey">
+        <div class="section-header">
+            <span class="section-number">ACT III</span>
+            <h2 class="section-title">THE JOURNEY</h2>
+            <div class="section-line"></div>
+        </div>
+
+        <div class="timeline-container">
+            <div class="timeline-item">
+                <div class="timeline-content">
+                    <div class="timeline-year">2023 — PRESENT</div>
+                    <div class="timeline-title">FullStack Developer</div>
+                    <div class="timeline-place">Innova Wide</div>
+                </div>
+            </div>
+
+            <div class="timeline-item">
+                <div class="timeline-content">
+                    <div class="timeline-year">2021 — 2022</div>
+                    <div class="timeline-title">IT Support / Software Engineer</div>
+                    <div class="timeline-place">Manaf CyberCafe</div>
+                </div>
+            </div>
+
+            <div class="timeline-item">
+                <div class="timeline-content">
+                    <div class="timeline-year">2020 — 2022</div>
+                    <div class="timeline-title">Master's in Software Engineering</div>
+                    <div class="timeline-place">University of Constantine 2</div>
+                </div>
+            </div>
+
+            <div class="timeline-item">
+                <div class="timeline-content">
+                    <div class="timeline-year">2019 — 2020</div>
+                    <div class="timeline-title">Software Engineer Intern</div>
+                    <div class="timeline-place">Condor Electronics</div>
+                </div>
+            </div>
+
+            <div class="timeline-item">
+                <div class="timeline-content">
+                    <div class="timeline-year">2017 — 2020</div>
+                    <div class="timeline-title">Bachelor in Computer Science</div>
+                    <div class="timeline-place">University of Constantine 2</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfolio Section -->
+    <section class="portfolio" id="portfolio">
+        <div class="section-header">
+            <span class="section-number">ACT IV</span>
+            <h2 class="section-title">THE PRODUCTIONS</h2>
+            <div class="section-line"></div>
+        </div>
+
+        <div class="portfolio-grid">
+            <div class="portfolio-item">
+                <!-- Updated Portfolio Image -->
+                <img src="assets/img/Tanky.jpg" alt="Tanky Shop">
+                <div class="portfolio-info">
+                    <div class="portfolio-category">E-COMMERCE</div>
+                    <h3 class="portfolio-title">TANKY SHOP</h3>
+                    <p class="portfolio-desc">A high-tech e-commerce platform built with ASP.NET, SQL, and modern
+                        frontend technologies. Fully responsive and optimized for performance.</p>
+                    <a href="https://github.com/HoussamEddineSmati/TankyHighTech" class="portfolio-link"
+                        target="_blank">VIEW PROJECT</a>
+                </div>
+            </div>
+
+            <div class="portfolio-item">
+                <!-- Updated Portfolio Image -->
+                <img src="assets/img/BDI_AUTONOMOUS.jpg" alt="Autonomous Cars">
+                <div class="portfolio-info">
+                    <div class="portfolio-category">SIMULATION</div>
+                    <h3 class="portfolio-title">BDI AUTONOMOUS CARS</h3>
+                    <p class="portfolio-desc">A sophisticated simulation of autonomous vehicles using BDI agent
+                        architecture, developed in Java and JavaFX.</p>
+                    <a href="https://github.com/HoussamEddineSmati/SelfDrivingCarSimulator-main" class="portfolio-link"
+                        target="_blank">VIEW PROJECT</a>
+                </div>
+            </div>
+
+            <div class="portfolio-item">
+                <!-- Updated Portfolio Image -->
+                <img src="assets/img/MOVIE_FANTASY.jpg" alt="Movie Fantasy">
+                <div class="portfolio-info">
+                    <div class="portfolio-category">WEB APPLICATION</div>
+                    <h3 class="portfolio-title">MOVIE FANTASY</h3>
+                    <p class="portfolio-desc">A cinematic journey through code — a React-powered website showcasing
+                        programming expertise and creative vision.</p>
+                    <a href="https://moviefantasy.onrender.com" class="portfolio-link" target="_blank">VIEW PROJECT</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact" id="contact">
+        <div class="section-header">
+            <span class="section-number">FINALE</span>
+            <h2 class="section-title">THE CALL</h2>
+            <div class="section-line"></div>
+        </div>
+
+        <div class="contact-content">
+            <p class="contact-tagline">"Every great story needs collaboration. Let's write the next chapter together."
+            </p>
+
+            <div class="contact-info">
+                <div class="contact-item">
+                    <div class="contact-label">TELEPHONE</div>
+                    <div class="contact-value">
+                        <a href="tel:+97455226379">+974 5522 6379</a>
+                    </div>
+                </div>
+                <div class="contact-item">
+                    <div class="contact-label">EMAIL</div>
+                    <div class="contact-value">
+                        <a href="mailto:houssam.smati1@gmail.com">houssam.smati1@gmail.com</a>
+                    </div>
+                </div>
+            </div>
+
+            <form class="contact-form">
+                <div class="form-row">
+                    <div class="form-group">
+                        <input type="text" placeholder="Your Name">
+                    </div>
+                    <div class="form-group">
+                        <input type="email" placeholder="Your Email">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <input type="text" placeholder="Project Title">
+                </div>
+                <div class="form-group">
+                    <textarea placeholder="Tell me about your vision..."></textarea>
+                </div>
+                <button type="submit" class="cta-btn">Send Message</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-logo">HOUSSEM EDDINE SMATI</div>
+        <p class="footer-text">© 2024 — ALL RIGHTS RESERVED</p>
     </footer>
 
-    <!--==================== SCROLL TOP ====================-->
-    <a href="#" class="scrollup" id="scroll-up">
-        <i class="uil uil-arrow-up scrollup_icon"></i>
-    </a>
-
-    <!--==================== SWIPER JS ====================-->
-    <script src="assets/js/swiper-bundle.min.js"></script>
-
-    <!--==================== MAIN JS ====================-->
+    <!-- Scripts -->
     <script src="assets/js/main.js"></script>
-    <script src="https://unpkg.com/typed.js@2.0.14/dist/typed.umd.js"></script>
-    <script src="assets/js/animation.js"></script>
 </body>
+
 </html>
